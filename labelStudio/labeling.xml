@@ -1,0 +1,20 @@
+<View>
+  <Video name="video" value="$video" />
+
+  <Choices name="lado" toName="video" choice="single" required="true">
+    <Choice value="derecha"/>
+    <Choice value="izquierda"/>
+  </Choices>
+
+  <Choices name="movimiento" toName="video" choice="single" required="true">
+    <Choice value="patada_lateral"/>
+  </Choices>
+
+  <Choices name="errores" toName="video" choice="multiple">
+    <Choice value="error_giro_incompleto_pie_base"/>
+    <Choice value="error_pierna_patea_flexionada"/>
+    <Choice value="error_pierna_base_flexionada"/>
+    <Choice value="error_pie_patea_sin_filo"/>
+    <Choice value="error_patada_desalineada"/>
+  </Choices>
+</View>

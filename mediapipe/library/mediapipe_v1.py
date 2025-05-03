@@ -10,7 +10,7 @@ def process_video(
 ) -> List[List]:
     """
     Procesa un único vídeo y devuelve una lista de filas:
-      [video_filename (sin extensión), frame_idx, landmark_idx, x, y, z, visibility]
+      [video_filename (con extensión), frame_idx, landmark_idx, x, y, z, visibility]
     """
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
@@ -19,7 +19,7 @@ def process_video(
 
     rows = []
     frame_count = 0
-    video_filename = os.path.splitext(os.path.basename(video_path))[0]  # <- Sin extensión
+    video_filename = os.path.basename(video_path)  # <- Con extensión
 
     while True:
         ret, frame = cap.read()

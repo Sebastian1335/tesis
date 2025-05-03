@@ -4,3 +4,4 @@
 *.mp4
 *.gif
 *.avi
+mediapipe/library/__pycache__

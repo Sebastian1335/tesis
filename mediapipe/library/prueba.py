@@ -68,7 +68,7 @@ def show_video_with_keypoints(
 
 
 if __name__ == "__main__":
-    video_path = "D:/la-u/ciclo 2025-1/Seminario/DATASET/Hugo/20250510_145932.mp4"
-    model_path = "D:/la-u/ciclo 2025-1/Seminario/MODELO/Keypoints/mediaPipe/pose_landmarker_heavy.task"
+    video_path = "D:/la-u/ciclo 2025-1/Seminario/DATASET/Hugo/Hugo7.mp4"
+    model_path = "D:/la-u/ciclo 2025-1/Seminario/MODELO/Keypoints/mediaPipe/pose_landmarker_full.task"
 
     show_video_with_keypoints(video_path, model_path)

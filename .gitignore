@@ -8,3 +8,4 @@ mediapipe/*/__pycache__
 */__pycache__
 *.json
 *.h5
+*.keras
